@@ -1,0 +1,31 @@
+.titulo_h3{
+    color: blue;
+}
+/*selectores de etiquetas*/
+header{
+    /*todos las etiquetas de header*/
+    background-color: #444;
+}
+h1{
+    /*todas etiquetras h1*/
+    color: #eee;
+}
+h2{
+    /*todas las etiquetas h2*/
+    font-family: sans-serif;
+}
+section, aside{
+    border: 1px solid gray;
+}
+a{
+    color: crimson;
+}
+.enlace_importante{
+    /*todos los elementos o etiquetas que 
+    tengan la clase enlace importante*/
+    color: teal;
+
+}
+.titulo_h3{
+    color: red;
+}

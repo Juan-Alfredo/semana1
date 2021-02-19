@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>formularios en html</h1></header>
+    <main>
+        <form action="destino.html">
+            <fieldset>
+                <legend>Datos personales</legend>
+            
+            <div>
+                <label for="nombre">indique su nombre:</label>
+                <input type="text" id="nombre" placeholder="ejm: juan" required/>
+            </div>
+            <div>
+                <label for="apellido">indique su apellido:</label>
+                <input type="text" id="apellido" placeholder="ejm: palacios"/>
+            </div>
+            <div>
+                <label for="">ingrese su edad:</label>
+                <input type="number" id="edad" min="17" placeholder="ejm: 25" required>
+            </div>
+            <div><label for="">correo electronico:</label>
+                <input type="email" id="correo" placeholder="ejm: juan@gmail">
+            </div>
+            <div>
+                <label for="fecha de nacimiento">fecha de nacimiento:</label>
+                <input type="date" id="fecha de nacimiento">
+            </div>
+            <div>
+                <label for="">color de ojos</label>
+                <input type="color" id="color de ojos">
+            </div>
+             <div>
+                 <label for="">elija su genero</label>
+                 <br/>
+                 <label for="mujer">mujer</label>
+                 <input type="radio" value="0" id="mujer" name="radio_genero">
+                 <label for="varon">varon</label>
+                 <input type="radio" value="1" id="varon" name="radio_genero">
+                 <label for="otro">otro</label>
+                 <input type="radio" value="2" id="otro" name="radio_genero">
+             </div>
+
+             <div>
+                <label for="">seleccione lenguajes de programacion</label>
+                <br/>
+                <label for="check_js">javascript:</label>
+                <input type="checkbox" id="check_js" name="check_js" value="js">
+                <label for="check_python">pythont:</label>
+                <input type="checkbox" id="check_python" name="check_python" value="py">
+                <label for="check_ts">typescript:</label>
+                <input type="checkbox" id="check_ts" name="check_ts" value="ts">
+            </div>
+            <div>
+                <label for="">subir archivo</label>
+                <input type="file" id="cv" name="cv">
+            </div>
+            <div>
+                <label for="">escriba su experiencia laboral</label>
+                <textarea name="exp" id="exp" cols="30" rows="5" maxlength="20"></textarea>
+            </div>
+            <div>
+                <label for="">seleccion el pais de residencia</label>
+                <select name="select_pais" id="select_pais">
+                    <option value="1">peru</option>
+                    <option value="2">argentina</option>
+                    <option value="3">chile</option>
+                    <option value="4">colombia</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">crear cuenta</button>
+                <button type="button">cancelar</button>
+                <button type="reset">limpiar campos</button>
+            </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
