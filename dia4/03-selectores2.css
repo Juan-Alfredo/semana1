@@ -1,5 +1,5 @@
 .titulo_h3{
-    color: blue;
+    color: red;
 }
 /*selectores de etiquetas*/
 header{
@@ -27,5 +27,43 @@ a{
 
 }
 .titulo_h3{
-    color: red;
+    color: blue;
+}
+.boton_navegacion{
+    text-decoration: none;
+    font-family: cursive;
+    color: yellow;
+}
+button.boton_navegacion{
+    /*todas las etiquetas que sean del tipo button*/
+    color: royalblue;
+}
+.boton_navegacion.activo{
+    box-shadow: #aaa 0px 0px 20px;
+}
+#mifootter{
+    background-color: #ccc;
+}
+article p{
+    /*todos los parrafos que sean desendientes de in article*/
+    color: #444;
+    text-indent: 10px;
+}
+section > p{
+    font-size: 13px;
+    color: #bbb;
+}
+.publicidad_imagen + figcaption{
+    /*el figcaption que sea hermano directo 
+    de un elemnto con clase .publicida_imagen*/
+    /*ojo ese figcaption debe ser hermano inferior
+    de la clase */
+    font-style: italic;
+    font-size: 12px;
+}
+#mifooter a ~ button{
+    /*Todo los button que sean hermanos sigiientes
+    de a y estos, hijos de un elemento de id #miFooter*/
+    border-radius: 6px;
+    background-color: salmon;
 }
